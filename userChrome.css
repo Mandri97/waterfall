@@ -42,7 +42,7 @@
     /* Comment the color theme you don't want to use */
 
     /* Dark Theme Colors */
-    --window-colour:               #1f2122;
+    --window-colour:               #1b1a1d; /*#1f2122;*/
     --secondary-colour:            #141616;
     --inverted-colour:             #FAFAFC;
 
@@ -204,7 +204,13 @@ window,
 
 }
 
-
+/* Right click context menu */
+#contentAreaContextMenu * 
+{
+    property: value !important;
+    font-family: Iosevka Nerd Font !important;
+    font-size: 13px !important;
+}
 
 
 
@@ -221,13 +227,16 @@ window,
 /* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
 
-
 /* remove gap after pinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
     > #tabbrowser-arrowscrollbox
     > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
-
+.tabbrowser-tab
+{ 
+    font-family: Iosevka Nerd Font !important;
+    font-size: 13px !important; 
+}
 /* remove tab shadow */
 .tabbrowser-tab
     >.tab-stack
@@ -378,6 +387,11 @@ window,
 /* remove border below whole nav */
 #navigator-toolbox { border-bottom: none !important; }
 
+#urlbar{ 
+    -moz-appearance: none !important;
+    font-family: Iosevka Nerd Font !important;
+    font-size: 13px !important;
+}
 
 #urlbar,
 #urlbar * { box-shadow: none !important; }
